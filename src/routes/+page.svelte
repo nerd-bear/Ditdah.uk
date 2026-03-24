@@ -351,8 +351,35 @@
 </script>
 
 <svelte:head>
-  <title>DitDah.uk</title>
+  <title>DitDah.uk | VBand Compatible Morse Code Practice Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="VBand compatible, Morse code practice site with a responsive browser-based keyer supporting paddle and straight key modes, adjustable speed and tone, and real-time text decoding!"
+  />
+  <meta
+    name="keywords"
+    content="Morse code practice, VBand compatible, browser keyer, CW trainer, paddle keyer, straight key, Morse code decoder, ham radio practice"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="DitDah.uk" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DitDah.uk" />
+  <meta property="og:title" content="DitDah.uk | VBand Compatible Morse Code Practice Site" />
+  <meta
+    property="og:description"
+    content="VBand compatible, Morse code practice site with a responsive browser-based keyer supporting paddle and straight key modes, adjustable speed and tone, and real-time text decoding!"
+  />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:image:alt" content="DitDah.uk Morse code practice interface" />
+  <meta property="og:url" content="https://ditdah.uk/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DitDah.uk | VBand Compatible Morse Code Practice Site" />
+  <meta
+    name="twitter:description"
+    content="VBand compatible, Morse code practice site with a responsive browser-based keyer supporting paddle and straight key modes, adjustable speed and tone, and real-time text decoding!"
+  />
+  <meta name="twitter:image" content="/og-image.jpg" />
 </svelte:head>
 
 <div class="min-h-screen bg-[#07080b] text-white antialiased">
