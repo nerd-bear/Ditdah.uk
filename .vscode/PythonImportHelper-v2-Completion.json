@@ -1,0 +1,311 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "wave",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wave",
+        "description": "wave",
+        "detail": "wave",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "node_modules.flatted.python.flatted",
+        "description": "node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i",
+        "detail": "node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "node_modules.flatted.python.flatted",
+        "description": "node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i\ndef _object_keys(value):\n    for key in value:\n        yield key\ndef _is_array(value):",
+        "detail": "node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "node_modules.flatted.python.flatted",
+        "description": "node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "node_modules.flatted.python.flatted",
+        "description": "node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "TonePlayer",
+        "kind": 6,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "class TonePlayer:\n    def __init__(self, sample_rate=22050):\n        self.sample_rate = sample_rate\n        self._cache = {}\n        self._loop_stop = threading.Event()\n        self._loop_thread = None\n    def available(self):\n        return winsound is not None\n    def _build_wav_bytes(self, freq_hz: int, duration_s: float, volume: float = 0.22):\n        key = (int(freq_hz), round(duration_s, 4), round(volume, 3))",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsDialog",
+        "kind": 6,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "class SettingsDialog(tk.Toplevel):\n    def __init__(self, master, settings):\n        super().__init__(master)\n        self.title(\"Settings\")\n        self.resizable(False, False)\n        self.transient(master)\n        self.grab_set()\n        self.result = None\n        pad = {\"padx\": 10, \"pady\": 6}\n        frame = ttk.Frame(self, padding=12)",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "MorseTrainerApp",
+        "kind": 6,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "class MorseTrainerApp(tk.Tk):\n    DIT_INPUTS = {\"Control_L\", \"Shift_L\", \"bracketleft\", \"less\"}\n    DAH_INPUTS = {\"Control_R\", \"Shift_R\", \"bracketright\", \"greater\"}\n    def __init__(self):\n        super().__init__()\n        self.title(\"Minimal Morse Trainer\")\n        self.geometry(\"760x420\")\n        self.minsize(680, 380)\n        self.settings = {\n            \"wpm\": 18,",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "configure_styles",
+        "kind": 2,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "def configure_styles(root: tk.Tk):\n    style = ttk.Style(root)\n    try:\n        style.configure(\"Correct.TLabel\", foreground=\"#1a7f37\")\n    except Exception:\n        pass\ndef main():\n    app = MorseTrainerApp()\n    configure_styles(app)\n    app.mainloop()",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "def main():\n    app = MorseTrainerApp()\n    configure_styles(app)\n    app.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "MORSE_TO_TEXT",
+        "kind": 5,
+        "importPath": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "description": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "peekOfCode": "MORSE_TO_TEXT = {\n    \".-\": \"A\", \"-...\": \"B\", \"-.-.\": \"C\", \"-..\": \"D\", \".\": \"E\",\n    \"..-.\": \"F\", \"--.\": \"G\", \"....\": \"H\", \"..\": \"I\", \".---\": \"J\",\n    \"-.-\": \"K\", \".-..\": \"L\", \"--\": \"M\", \"-.\": \"N\", \"---\": \"O\",\n    \".--.\": \"P\", \"--.-\": \"Q\", \".-.\": \"R\", \"...\": \"S\", \"-\": \"T\",\n    \"..-\": \"U\", \"...-\": \"V\", \".--\": \"W\", \"-..-\": \"X\", \"-.--\": \"Y\",\n    \"--..\": \"Z\",\n    \".----\": \"1\", \"..---\": \"2\", \"...--\": \"3\", \"....-\": \"4\", \".....\": \"5\",\n    \"-....\": \"6\", \"--...\": \"7\", \"---..\": \"8\", \"----.\": \"9\", \"-----\": \"0\",\n    \".-.-.-\": \".\", \"--..--\": \",\", \"..--..\": \"?\", \".----.\": \"'\", \"-.-.--\": \"!\",",
+        "detail": "node_modules.minimal_morse_trainer_windows_safe_v5",
+        "documentation": {}
+    },
+    {
+        "label": "TonePlayer",
+        "kind": 6,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "class TonePlayer:\n    def __init__(self, sample_rate=22050):\n        self.sample_rate = sample_rate\n        self._cache = {}\n        self._loop_stop = threading.Event()\n        self._loop_thread = None\n    def available(self):\n        return winsound is not None\n    def _build_wav_bytes(self, freq_hz: int, duration_s: float, volume: float = 0.22):\n        key = (int(freq_hz), round(duration_s, 4), round(volume, 3))",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsDialog",
+        "kind": 6,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "class SettingsDialog(tk.Toplevel):\n    def __init__(self, master, settings):\n        super().__init__(master)\n        self.title(\"Settings\")\n        self.resizable(False, False)\n        self.transient(master)\n        self.grab_set()\n        self.result = None\n        pad = {\"padx\": 10, \"pady\": 6}\n        frame = ttk.Frame(self, padding=12)",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "MorseTrainerApp",
+        "kind": 6,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "class MorseTrainerApp(tk.Tk):\n    DIT_INPUTS = {\"Control_L\", \"Shift_L\", \"bracketleft\", \"less\"}\n    DAH_INPUTS = {\"Control_R\", \"Shift_R\", \"bracketright\", \"greater\"}\n    def __init__(self):\n        super().__init__()\n        self.title(\"DITDAH.PY\")\n        self.geometry(\"760x420\")\n        self.minsize(680, 380)\n        self.settings = {\n            \"wpm\": 18,",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "configure_styles",
+        "kind": 2,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "def configure_styles(root: tk.Tk):\n    style = ttk.Style(root)\n    try:\n        style.configure(\"Correct.TLabel\", foreground=\"#1a7f37\")\n    except Exception:\n        pass\ndef main():\n    app = MorseTrainerApp()\n    configure_styles(app)\n    app.mainloop()",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "def main():\n    app = MorseTrainerApp()\n    configure_styles(app)\n    app.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "MORSE_TO_TEXT",
+        "kind": 5,
+        "importPath": "node_modules.MORSE_TRAINER",
+        "description": "node_modules.MORSE_TRAINER",
+        "peekOfCode": "MORSE_TO_TEXT = {\n    \".-\": \"A\", \"-...\": \"B\", \"-.-.\": \"C\", \"-..\": \"D\", \".\": \"E\",\n    \"..-.\": \"F\", \"--.\": \"G\", \"....\": \"H\", \"..\": \"I\", \".---\": \"J\",\n    \"-.-\": \"K\", \".-..\": \"L\", \"--\": \"M\", \"-.\": \"N\", \"---\": \"O\",\n    \".--.\": \"P\", \"--.-\": \"Q\", \".-.\": \"R\", \"...\": \"S\", \"-\": \"T\",\n    \"..-\": \"U\", \"...-\": \"V\", \".--\": \"W\", \"-..-\": \"X\", \"-.--\": \"Y\",\n    \"--..\": \"Z\",\n    \".----\": \"1\", \"..---\": \"2\", \"...--\": \"3\", \"....-\": \"4\", \".....\": \"5\",\n    \"-....\": \"6\", \"--...\": \"7\", \"---..\": \"8\", \"----.\": \"9\", \"-----\": \"0\",\n    \".-.-.-\": \".\", \"--..--\": \",\", \"..--..\": \"?\", \".----.\": \"'\", \"-.-.--\": \"!\",",
+        "detail": "node_modules.MORSE_TRAINER",
+        "documentation": {}
+    },
+    {
+        "label": "TonePlayer",
+        "kind": 6,
+        "importPath": "node_modules.r2d2",
+        "description": "node_modules.r2d2",
+        "peekOfCode": "class TonePlayer:\n    def __init__(self, sample_rate=22050):\n        self.sample_rate = sample_rate\n        self._cache = {}\n        self._loop_stop = threading.Event()\n        self._loop_thread = None\n    def available(self):\n        return winsound is not None\n    def _build_wav_bytes(self, freq_hz: int, duration_s: float, volume: float = 0.22):\n        key = (int(freq_hz), round(duration_s, 4), round(volume, 3))",
+        "detail": "node_modules.r2d2",
+        "documentation": {}
+    },
+    {
+        "label": "AsciiFreqGraph",
+        "kind": 6,
+        "importPath": "node_modules.r2d2",
+        "description": "node_modules.r2d2",
+        "peekOfCode": "class AsciiFreqGraph:\n    def __init__(self, min_hz=400, max_hz=1000, rows=12, cols=60):\n        self.min_hz = min_hz\n        self.max_hz = max_hz\n        self.rows = rows\n        self.cols = cols\n        self.history = []\n    def add_point(self, freq_hz: int):\n        freq_hz = max(self.min_hz, min(self.max_hz, freq_hz))\n        self.history.append(freq_hz)",
+        "detail": "node_modules.r2d2",
+        "documentation": {}
+    },
+    {
+        "label": "enable_ansi_on_windows",
+        "kind": 2,
+        "importPath": "node_modules.r2d2",
+        "description": "node_modules.r2d2",
+        "peekOfCode": "def enable_ansi_on_windows():\n    if os.name != \"nt\":\n        return True\n    try:\n        import ctypes\n        kernel32 = ctypes.windll.kernel32\n        handle = kernel32.GetStdHandle(-11)  \n        mode = ctypes.c_uint32()\n        if kernel32.GetConsoleMode(handle, ctypes.byref(mode)) == 0:\n            return False",
+        "detail": "node_modules.r2d2",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "node_modules.r2d2",
+        "description": "node_modules.r2d2",
+        "peekOfCode": "def main():\n    ansi_ok = enable_ansi_on_windows()\n    player = TonePlayer()\n    graph = AsciiFreqGraph(min_hz=400, max_hz=1000, rows=12, cols=70)\n    active = True\n    if ansi_ok:\n        sys.stdout.write(\"\\033[2J\\033[H\")\n        sys.stdout.flush()\n    else:\n        os.system(\"cls\")",
+        "detail": "node_modules.r2d2",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsDialog",
+        "kind": 6,
+        "importPath": "node_modules.settings_fix_example",
+        "description": "node_modules.settings_fix_example",
+        "peekOfCode": "class SettingsDialog(tk.Toplevel):\n    def __init__(self, master, settings):\n        super().__init__(master)\n        self.title(\"Settings\")\n        self.resizable(False, False)\n        self.transient(master)\n        self.grab_set()\n        self.result = None\n        frame = ttk.Frame(self, padding=12)\n        frame.pack(fill=\"both\", expand=True)",
+        "detail": "node_modules.settings_fix_example",
+        "documentation": {}
+    }
+]

@@ -558,6 +558,6 @@
 			</div>
 		</section>
 
-		<div class="mt-2 text-center text-white/35">Made by Iona a SWL (M7DXZ in a few days)</div>
+		<div class="mt-2 text-center text-white/35">Made by Iona a SWL (M6PXO in a few days)</div>
 	</main>
 </div>
