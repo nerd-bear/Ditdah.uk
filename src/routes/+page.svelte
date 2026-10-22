@@ -443,16 +443,17 @@
 		property="og:description"
 		content="VBand compatible, Morse code practice site with a responsive browser-based keyer supporting paddle and straight key modes, adjustable speed and tone, and real-time text decoding!"
 	/>
-	<meta property="og:image" content="/og-image.jpg" />
-	<meta property="og:image:alt" content="DitDah.uk Morse code practice interface" />
+	<meta property="og:image" content="https://ditdah.uk/favicon/web-app-manifest-512x512.png" />
+	<meta property="og:image:alt" content="DitDah.uk logo" />
 	<meta property="og:url" content="https://ditdah.uk/" />
-	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://ditdah.uk/" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="DitDah.uk | VBand Compatible Morse Code Practice Site" />
 	<meta
 		name="twitter:description"
 		content="VBand compatible, Morse code practice site with a responsive browser-based keyer supporting paddle and straight key modes, adjustable speed and tone, and real-time text decoding!"
 	/>
-	<meta name="twitter:image" content="/og-image.jpg" />
+	<meta name="twitter:image" content="https://ditdah.uk/favicon/web-app-manifest-512x512.png" />
 
 	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
