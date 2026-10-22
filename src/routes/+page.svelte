@@ -558,6 +558,13 @@
 			</div>
 		</section>
 
-		<div class="mt-2 text-center text-white/35">Made by Iona a SWL (M6PXO in a few days)</div>
+		<div class="mt-2 text-center text-white/35">
+			Made by Iona a SWL (M6PXO in a few days) ·
+			<a
+				href="https://nerdbear.org"
+				class="underline decoration-white/20 underline-offset-4 transition hover:text-white/70"
+				>More by Nerd Bear</a
+			>
+		</div>
 	</main>
 </div>
